@@ -1,2 +1,2 @@
 # MyCV
-Visit it: https://dearies.github.io/MyCV/
+Visit it: https://dearies.github.io/AboutMe/
