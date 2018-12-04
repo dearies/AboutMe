@@ -1,0 +1,92 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+@font-face {
+    font-family: LobsterTwo-BoldItalic;
+    src: url(../font/Lobster/LobsterTwo-BoldItalic.ttf);
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../font/Roboto/Roboto-Light.ttf);
+}
+@font-face { 
+	font-family: LobsterTwo-Regular; 
+	src: url(../font/Lobster/LobsterTwo-Italic.ttf); 
+}
+header .myname h1 {
+    padding-left: 12%;
+    font-family: LobsterTwo-Regular;
+    font-weight: 400;
+}
+
+header .myname p {
+    font-family: segoe ui light;
+}
+
+header .myname {
+    position: absolute;
+    width: 1000px;
+    color: white;
+    font-size: 3em;
+    top: 50%;
+    left: 20%;
+}
+
+header .right {
+    width: 60%;
+    float: left;
+}
+
+.menu-center {
+    width: 1200px;
+    margin: auto;
+    padding-top: 25px;
+}
+
+header .logo {
+    color: white;
+    font-size: 3em;
+    display: inline-block;
+    font-family: LobsterTwo-BoldItalic;
+}
+
+header nav .left {
+    width: 40%;
+    float: left;
+}
+
+header nav ul li {list-style: none;float: right;}
+
+nav {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background: transparent;
+    top: 0px;
+    left: 0px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 10px 20px 0px 20px;
+    display: block;
+    font-family: segoe ui light;
+}
+
+nav ul li a:hover {
+    color: #607d8b;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+header {
+	width: 100%;
+	height: 768px;
+	background-image: url('../images/city.jpg');
+	background-size: cover;
+	position: relative;
+}
