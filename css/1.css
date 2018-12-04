@@ -35,7 +35,7 @@ header .myname {
 
 header .right {
     width: 60%;
-    float: left;
+    float: right;
 }
 
 .menu-center {
@@ -56,7 +56,7 @@ header nav .left {
     float: left;
 }
 
-header nav ul li {list-style: none;float: right;}
+header nav ul li {list-style: none;float: left;}
 
 nav {
     width: 100%;
