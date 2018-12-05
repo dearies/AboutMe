@@ -2,6 +2,32 @@
 	padding: 0;
 	margin: 0;
 }
+@font-face {
+    font-family: LobsterTwo-BoldItalic;
+    src: url(../font/Lobster/LobsterTwo-BoldItalic.ttf);
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../font/Roboto/Roboto-Light.ttf);
+}
+@font-face { 
+	font-family: LobsterTwo-Regular; 
+	src: url(../font/Lobster/LobsterTwo-Italic.ttf); 
+}
+
+p {
+    font-family: Roboto-Light;
+    font-size: 1.2em;
+    color: #1C2349;
+}
+
+section .education .edu-box p {
+    font-size: 1em;
+}
+
+header .right ul {
+    float: right;
+}
 
 section .education .year {
     font-weight: bold;
@@ -18,9 +44,15 @@ section .education .content .edu-box {
 section .education .content {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 50%;
+    left: 20%;
+    transform: translate(0%,-50%);
+    width: 25%;
+    height: 500px;
+}
+
+section .education .content.experience {
+    left: 55%;
+    width: 25%;
 }
 
 section .education {
@@ -29,27 +61,9 @@ section .education {
     background: white;
     position: relative;
 }
-@font-face {
-    font-family: LobsterTwo-BoldItalic;
-    src: url(../font/Lobster/LobsterTwo-BoldItalic.ttf);
-}
-@font-face {
-    font-family: Roboto-Light;
-    src: url(../font/Roboto/Roboto-Light.ttf);
-}
-@font-face {
-    font-family: Roboto-Thin;
-    src: url(../font/Roboto/Roboto-Thin.ttf);
-}
-@font-face { 
-	font-family: LobsterTwo-Regular; 
-	src: url(../font/Lobster/LobsterTwo-Italic.ttf); 
-}
+
 section .about .content p {
-    font-size: 1.2em;
-    font-family: Roboto-Light;
     margin-top: 40px;
-    color: #1C2349;
     line-height: 2em;
 }
 
@@ -62,10 +76,9 @@ section h1 {
 section .about .content {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    left: 20%;
+    transform: translate(0%,-50%);
     width: 50%;
-
 }
 
 section .about {
@@ -79,10 +92,40 @@ header .myname h1 {
     padding-left: 12%;
     font-family: LobsterTwo-Regular;
     font-weight: 400;
+    animation: nameshow 1.5s forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes nameshow {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 header .myname p {
     font-family: segoe ui light;
+    animation: helloshow 0.5s forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    color: white;
+}
+@-webkit-keyframes helloshow {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0px);
+    }
 }
 
 header .myname {
@@ -97,7 +140,7 @@ header .myname {
 
 header .right {
     width: 60%;
-    float: right;
+    float: left;
 }
 
 .menu-center {
@@ -112,6 +155,11 @@ header .logo {
     display: inline-block;
     font-family: LobsterTwo-BoldItalic;
     cursor: pointer;
+    transition: 0.4s;
+}
+
+header .logo:hover {
+    color: #456575;
 }
 
 header nav .left {
@@ -129,6 +177,19 @@ nav {
     top: 0px;
     left: 0px;
     z-index: 100;
+    animation: navshow 1s forwards;
+}
+@-webkit-keyframes navshow {
+    0% {
+        top: -100px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 nav ul li a {
@@ -138,10 +199,11 @@ nav ul li a {
     padding: 10px 20px 0px 20px;
     display: block;
     font-family: segoe ui light;
+    transition: 0.4s;
 }
 
 nav ul li a:hover {
-    color: #607d8b;
+    color: #456575;
 }
 html, body {
 	width: 100%;
@@ -151,7 +213,8 @@ header {
 	width: 100%;
 	height: 768px;
 	background-image: url('../images/evergreen.jpg');
-	background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
 	position: relative;
 }
 header .blur-background {
@@ -160,4 +223,44 @@ header .blur-background {
     width: 100%;
     height: 100%;
     background: #03345a6e;
+}
+
+section .skills {
+    width: 100%;
+    height: 600px;
+    background: white;
+    position: relative;
+}
+
+section .skills .content {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+}
+
+section .skills .content .skill-box {
+	width: 100%;
+	height: auto;
+	margin: 40px 0px;
+}
+
+section .skills .content .skill-box p {
+	display: inline-block;
+	font-size: 1em;
+	width: 200px;
+}
+
+p.percentage {
+    width: 0px!important;
+    padding-left: 10px;
+}
+
+section .skills .content .skill-box .bar {
+	background-color: #5569DC;
+	width: 600px;
+	height: 6px;
+	display: inline-block;
+	margin: 3px 0px;
 }
