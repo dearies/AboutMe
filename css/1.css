@@ -65,7 +65,7 @@ section .education .content {
     left: 20%;
     transform: translate(0%,-50%);
     width: 25%;
-    height: 500px;
+    height: 540px;
 }
 
 section .education .content.experience {
@@ -157,27 +157,30 @@ header .myname {
     width: 1000px;
     color: white;
     font-size: 3em;
-    top: 50%;
+    top: 25%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,0%);
     z-index: 2;
     text-align: center;
 }
 
-header .myname .icons ul {
+.icons ul {
     margin: auto;
     width: 221px;
 }
 
-header .myname .icons {
+.icons {
     width: 100%;
     margin-top: 25px;
 }
 
-header .myname .icons li {
+.icons li {
     float: left;
     list-style: none;
     padding: 10px 15px;
+}
+
+header .myname .icons li {
     animation: riseUp 0.5s forwards;
     animation-delay: 2.5s;
     opacity: 0;
@@ -204,7 +207,7 @@ header .myname .icons li:nth-child(3) {
     }
 }
 
-header .myname .icons li a {
+.icons li a {
     color: white;
     
 }
@@ -374,7 +377,7 @@ section .skills .content .skill-box:nth-child(5) .bar {
 
 section .contact {
     width: 100%;
-    height: 500px;
+    height: 400px;
     background: rgba(85, 105, 220, 0.1);
     position: relative;
 }
@@ -385,10 +388,67 @@ section .contact .content {
     left: 20%;
     transform: translate(0%,-50%);
     width: 25%;
-
+    height: 300px;
 }
 
 section .contact .content.info {
     left: 55%;
     width: 25%;
+    height: 300px;
+}
+
+section .contact .content.info .icons  {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    margin: 0;
+    width: 100%;
+}
+
+section .contact .content.info .icons i {
+    font-size: 2em;
+    color: #5569DC;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background: #5569DC;
+}
+
+footer .foot-center {
+    width: 1200px;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+footer .foot-center .left {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+footer .foot-center .left p {
+    color: white;
+    font-size: 1em;
+}
+
+footer .foot-center .right {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+footer .foot-center .right a.btn-download {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: Roboto-Light;
+    border: 1px solid white;
+    padding: 12px 40px;
+    transition: 0.4s;
+}
+
+footer .foot-center .right a.btn-download:hover {
+    background: #6777cf;
 }
