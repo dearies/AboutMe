@@ -32,13 +32,6 @@
     .col-12 {width: 100%!important;}
     .fit {width: 66.66%!important; margin:auto;}
 }
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-}
-[class*="fit"] {
-    width: 100%;
-}
 
 section .contact .content h2 {
     font-family: Roboto-Light;
@@ -261,6 +254,12 @@ header nav .left {
 
 header nav ul li {list-style: none;float: left;}
 
+header .btn-menu {
+    color: white;
+    font-size: 35px;
+    display: none;
+}
+
 nav {
     width: 100%;
     height: 100px;
@@ -334,7 +333,6 @@ section .skills .content .skill-box {
 section .skills .content .skill-box p {
 	display: inline-block;
 	font-size: 1em;
-	width: 200px;
 }
 
 p.percentage {
@@ -366,7 +364,7 @@ section .skills .content .skill-box:nth-child(5) .bar {
 	width: 390px;
 }
 
-section .skills .content .skill-box:nth-child(5) .bar {
+section .skills .content .skill-box:nth-child(6) .bar {
 	width: 520px;
 }
 
@@ -398,6 +396,10 @@ section .contact .content.info .icons  {
 section .contact .content.info .icons i {
     font-size: 2em;
     color: #5569DC;
+}
+
+section .contact .icons ul{
+    width: 177px;
 }
 
 footer {
@@ -438,4 +440,85 @@ footer .foot-center .right a.btn-download {
 
 footer .foot-center .right a.btn-download:hover {
     background: #6777cf;
+}
+/* For mobile phones: */
+@media only screen and (max-width: 767px) {
+    nav {
+        position: absolute;
+        z-index: 2;
+        color: white;
+        top: 0px;
+        left: 0px;
+    }
+
+    header nav .left .logo {
+        padding: 10px;
+    }
+
+    header nav ul li {
+        display: none;
+    }
+
+    header .btn-menu {
+        display: block;
+        float: right;
+        padding: 23px 15px;
+    }
+
+    section .about .content {
+        padding: 30px 0px;
+    }
+
+    section .skills .content .skill-box:nth-child(2) .bar {
+        width: 80%;
+    }
+    
+    section .skills .content .skill-box:nth-child(3) .bar {
+        width: 60%;
+    }
+    
+    section .skills .content .skill-box:nth-child(4) .bar {
+        width: 50%;
+    }
+    
+    section .skills .content .skill-box:nth-child(5) .bar {
+        width: 50%;
+    }
+    
+    section .skills .content .skill-box:nth-child(6) .bar {
+        width: 70%;
+    }
+
+    p.percentage {
+        padding-left: 2px;
+    }
+
+    section .contact {
+        height: 400px;
+    }
+
+    section .contact .content.info {
+        height: 110px;
+    }
+
+    footer .foot-center {
+        padding: 65px 0px;
+    }
+
+    footer .foot-center .left {
+        padding-top: 35px;
+    }
+
+    footer .foot-center .right {
+        margin: -75px 0px;
+    }
+
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+[class*="fit"] {
+    width: 80%;
+    margin: auto;
 }
