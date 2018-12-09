@@ -16,13 +16,37 @@
 	src: url(../font/Lobster/LobsterTwo-Italic.ttf); 
 }
 
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%!important;}
+    .col-2 {width: 16.66%!important;}
+    .col-3 {width: 25%!important;}
+    .col-4 {width: 33.33%!important;}
+    .col-5 {width: 41.66%!important;}
+    .col-6 {width: 50%!important;}
+    .col-7 {width: 58.33%!important;}
+    .col-8 {width: 66.66%!important;}
+    .col-9 {width: 75%!important;}
+    .col-10 {width: 83.33%!important;}
+    .col-11 {width: 91.66%!important;}
+    .col-12 {width: 100%!important;}
+    .fit {width: 66.66%!important; margin:auto;}
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+[class*="fit"] {
+    width: 100%;
+}
+
 section .contact .content h2 {
     font-family: Roboto-Light;
     color: #1C2349;
     line-height: 2em;
     font-size: 1.2em;
     display: inline-block;
-    width: 70px;
+    width: 25%;
 }
 
 p {
@@ -34,9 +58,9 @@ p {
 section .contact .content p {
     display: inline-block;
     font-size: 1.2em;
-    width: 279px;
-    padding-left: 25px;
-    margin: 15px 0px;
+    line-height: 2em;
+    width: 74%;
+    margin-top: 20px;
 }
 
 section .education .edu-box p {
@@ -57,21 +81,10 @@ section .education .content .edu-box {
     font-family: roboto-light;
     font-size: 1em;
     line-height: 2.5em;
+    width: 80%;
 }
 
-section .education .content {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(0%,-50%);
-    width: 25%;
-    height: 540px;
-}
-
-section .education .content.experience {
-    left: 55%;
-    width: 25%;
-}
+section .education .content {float: left;padding: 70px 0px;}
 
 section .education {
     width: 100%;
@@ -95,19 +108,12 @@ section .contact .content h1 {
     margin-bottom: 30px;
 }
 
-section .about .content {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(0%,-50%);
-    width: 50%;
-}
+section .about .content {padding: 70px 0px;}
 
 section .about {
     width: 100%;
-    height: 400px;
+    height: auto;
     background-color: rgba(85, 105, 220, 0.1);
-    position: relative;
 }
 
 header .myname h1 {
@@ -154,7 +160,6 @@ header .myname p {
 
 header .myname {
     position: absolute;
-    width: 1000px;
     color: white;
     font-size: 3em;
     top: 25%;
@@ -229,12 +234,10 @@ header .myname .b-image img {
 }
 
 header .right {
-    width: 60%;
     float: left;
 }
 
 .menu-center {
-    width: 1200px;
     margin: auto;
     padding-top: 25px;
 }
@@ -253,7 +256,6 @@ header .logo:hover {
 }
 
 header nav .left {
-    width: 40%;
     float: left;
 }
 
@@ -317,18 +319,11 @@ header .blur-background {
 
 section .skills {
     width: 100%;
-    height: 600px;
+    height: auto;
     background: white;
-    position: relative;
 }
 
-section .skills .content {
-    position: absolute;
-    width: 60%;
-    top: 50%;
-    left: 20%;
-    transform: translateY(-50%);
-}
+section .skills .content {padding: 70px 0px;}
 
 section .skills .content .skill-box {
 	width: 100%;
@@ -377,24 +372,19 @@ section .skills .content .skill-box:nth-child(5) .bar {
 
 section .contact {
     width: 100%;
-    height: 400px;
+    height: 325px;
     background: rgba(85, 105, 220, 0.1);
-    position: relative;
+    padding: 70px 0px;
 }
 
 section .contact .content {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(0%,-50%);
-    width: 25%;
-    height: 300px;
+    height: 325px;
+    float: left;
 }
 
 section .contact .content.info {
-    left: 55%;
-    width: 25%;
-    height: 300px;
+    position: relative;
+    height: 325px;
 }
 
 section .contact .content.info .icons  {
@@ -417,13 +407,11 @@ footer {
 }
 
 footer .foot-center {
-    width: 1200px;
     margin: auto;
     padding: 50px 0px;
 }
 
 footer .foot-center .left {
-    width: 50%;
     float: left;
     text-align: center;
 }
@@ -434,7 +422,6 @@ footer .foot-center .left p {
 }
 
 footer .foot-center .right {
-    width: 50%;
     float: left;
     text-align: center;
 }
