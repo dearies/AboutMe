@@ -443,12 +443,23 @@ footer .foot-center .right a.btn-download:hover {
 }
 /* For mobile phones: */
 @media only screen and (max-width: 767px) {
+    header {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
     nav {
         position: absolute;
         z-index: 2;
         color: white;
         top: 0px;
         left: 0px;
+    }
+
+    .col-10.menu-center {
+        padding-top: 0px;
     }
 
     header nav .left .logo {
