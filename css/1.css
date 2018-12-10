@@ -446,7 +446,7 @@ footer .foot-center .right a.btn-download:hover {
 @media only screen and (max-width: 767px) {
     header {
         background-size: cover;
-	    background-attachment: unset;
+	    background-attachment: fixed;
     }
 
     nav {
