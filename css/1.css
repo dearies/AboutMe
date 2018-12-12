@@ -232,7 +232,10 @@ header .myname .b-image {
 }
 
 header .myname .b-image img {
-    height: 179px;
+    height: 323px;
+    position: absolute;
+    top: -57px;
+    left: -51px;
 }
 
 header .right {
@@ -523,23 +526,23 @@ footer .foot-center .right a.btn-download:hover {
     }
 
     section .skills .content .skill-box:nth-child(2) .bar {
-        width: 80%;
+        width: 80%!important;
     }
     
     section .skills .content .skill-box:nth-child(3) .bar {
-        width: 60%;
+        width: 60%!important;
     }
     
     section .skills .content .skill-box:nth-child(4) .bar {
-        width: 50%;
+        width: 50%!important;
     }
     
     section .skills .content .skill-box:nth-child(5) .bar {
-        width: 50%;
+        width: 50%!important;
     }
     
     section .skills .content .skill-box:nth-child(6) .bar {
-        width: 70%;
+        width: 70%!important;
     }
 
     p.percentage {
