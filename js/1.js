@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	$(window).scroll(function () { 
         var position = $('html,body').scrollTop();
-        console.log(position);
         if (position >= 300) {
             $('nav').addClass('navChange');
             $('.btn-gotop').addClass('gotop-change');
@@ -10,9 +9,9 @@ $(document).ready(function() {
             $('nav').removeClass('navChange');
             $('.btn-gotop').removeClass('gotop-change');
         }
-        if (position >= 1100) {
-            $('section .skills .content .skill-box .bar').addClass('bar-change');
-        }
+        // if (position >= 1100) {
+        //     $('section .skills .content .skill-box .bar').addClass('bar-change');
+        // }
     });
     // scroll memu
     $('header nav .right ul li:nth-child(1), .btn-gotop').click(function (e) { 
