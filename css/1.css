@@ -476,12 +476,13 @@ footer .foot-center .right a.btn-download:hover {
     padding: 10px 14px;
     background: white;
     z-index: 10;
-    opacity: 0;
+    opacity: 1;
     transition: 0.4s;
+    display: none;
 }
 
 .gotop-change {
-    opacity: 1;
+    display: block;
     transition: 0.4s;
 }
 
