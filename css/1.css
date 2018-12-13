@@ -236,6 +236,7 @@ header .myname .b-image img {
     position: absolute;
     top: -57px;
     left: -51px;
+    z-index: 1;
 }
 
 header .right {
