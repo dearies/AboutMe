@@ -483,6 +483,7 @@ footer .foot-center .right a.btn-download:hover {
 
 .gotop-change {
     visibility: visible;
+    -webkit-backface-visibility: visible;
     opacity: 1;
     transition: 0.4s;
 }
