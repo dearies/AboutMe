@@ -285,14 +285,10 @@ nav {
 }
 
 .navChange {
-    
-background: #5569DC;
-    
-padding: 5px 0px;
-    
-font-size: 0.9em;
-    
-transition: 0.4s;
+    background: #5569DC;
+    padding: 5px 0px;
+    font-size: 0.9em;
+    transition: 0.4s;
 }
 
 @-webkit-keyframes navshow {
@@ -467,6 +463,30 @@ footer .foot-center .right a.btn-download {
 footer .foot-center .right a.btn-download:hover {
     background: #6777cf;
 }
+
+.btn-gotop {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: #5569DC;
+    font-size: 30px;
+    border: 1px solid #5569DC;
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 10px 14px;
+    background: white;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.gotop-change {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.4s;
+}
+
 /* For mobile phones: */
 @media only screen and (max-width: 767px) {
     header {
@@ -580,27 +600,4 @@ footer .foot-center .right a.btn-download:hover {
 [class*="fit"] {
     width: 90%;
     margin: auto;
-}
-
-.btn-gotop {
-    position: fixed;
-    right: 15px;
-    bottom: 15px;
-    color: #5569DC;
-    font-size: 30px;
-    border: 1px solid #5569DC;
-    border-radius: 40px;
-    cursor: pointer;
-    padding: 10px 14px;
-    background: white;
-    z-index: 10;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.4s;
-}
-
-.gotop-change {
-    visibility: visible;
-    opacity: 1;
-    transition: 0.4s;
 }
