@@ -1,15 +1,15 @@
 $(document).ready(function() {
 	$(window).scroll(function () { 
-        var position = $('html,body').scrollTop();
-        if (position >= 300) {
+        var position = $(this).scrollTop();
+        if (position > 300) {
             $('nav').addClass('navChange');
-            $('.btn-gotop').addClass('gotop-change');
+            $('.btn-gotop').css({"display": "block","opacity": "1"});
         }
         else {
             $('nav').removeClass('navChange');
-            $('.btn-gotop').removeClass('gotop-change');
+            $('.btn-gotop').css("display","none");
         }
-        if (position >= 1100) {
+        if (position > 1100) {
             $('section .skills .content .skill-box .bar').addClass('bar-change');
         }
     });
