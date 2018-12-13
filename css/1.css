@@ -233,10 +233,8 @@ header .myname .b-image {
 
 header .myname .b-image img {
     height: 323px;
-    position: absolute;
-    top: -57px;
-    left: -51px;
-    z-index: 1;
+    margin-left: -52px;
+    margin-top: -59px;
 }
 
 header .right {
